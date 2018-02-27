@@ -1,5 +1,6 @@
 count = 0
-number = 0
+number = 2
+total = 0
 
 
 
@@ -13,13 +14,14 @@ def isPrime(x):
 
 
 
-while count < 10003:
+while number < 1000000:
+    if number % 10000 == 0:
+            print(number)
     if isPrime(number):
-        if count % 1000 == 0:
-            print(count)
-        count = count + 1
+        total = total + number
     number = number + 1
-print(number - 1)
+print(total)
+    
 
 
         
